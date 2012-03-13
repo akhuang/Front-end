@@ -51,6 +51,61 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\css\bootstrap-responsive.css" />
+    <Content Include="assets\css\bootstrap.css" />
+    <Content Include="assets\css\docs.css" />
+    <Content Include="assets\ico\apple-touch-icon-114-precomposed.png" />
+    <Content Include="assets\ico\apple-touch-icon-57-precomposed.png" />
+    <Content Include="assets\ico\apple-touch-icon-72-precomposed.png" />
+    <Content Include="assets\ico\favicon.ico" />
+    <Content Include="assets\img\bird.png" />
+    <Content Include="assets\img\bootstrap-mdo-sfmoma-01.jpg" />
+    <Content Include="assets\img\bootstrap-mdo-sfmoma-02.jpg" />
+    <Content Include="assets\img\bootstrap-mdo-sfmoma-03.jpg" />
+    <Content Include="assets\img\browsers.png" />
+    <Content Include="assets\img\example-sites\fleetio.png" />
+    <Content Include="assets\img\example-sites\jshint.png" />
+    <Content Include="assets\img\example-sites\kippt.png" />
+    <Content Include="assets\img\example-sites\soundready.png" />
+    <Content Include="assets\img\examples\bootstrap-example-fluid.jpg" />
+    <Content Include="assets\img\examples\bootstrap-example-hero.jpg" />
+    <Content Include="assets\img\examples\bootstrap-example-starter.jpg" />
+    <Content Include="assets\img\github-16px.png" />
+    <Content Include="assets\img\glyphicons-halflings-white.png" />
+    <Content Include="assets\img\glyphicons-halflings.png" />
+    <Content Include="assets\img\glyphicons\glyphicons_009_magic.png" />
+    <Content Include="assets\img\glyphicons\glyphicons_042_group.png" />
+    <Content Include="assets\img\glyphicons\glyphicons_079_podium.png" />
+    <Content Include="assets\img\glyphicons\glyphicons_082_roundabout.png" />
+    <Content Include="assets\img\glyphicons\glyphicons_155_show_thumbnails.png" />
+    <Content Include="assets\img\glyphicons\glyphicons_163_iphone.png" />
+    <Content Include="assets\img\glyphicons\glyphicons_214_resize_small.png" />
+    <Content Include="assets\img\glyphicons\glyphicons_266_book_open.png" />
+    <Content Include="assets\img\grid-18px-masked.png" />
+    <Content Include="assets\img\icon-css3.png" />
+    <Content Include="assets\img\icon-github.png" />
+    <Content Include="assets\img\icon-html5.png" />
+    <Content Include="assets\img\icon-twitter.png" />
+    <Content Include="assets\img\less-logo-large.png" />
+    <Content Include="assets\img\less-small.png" />
+    <Content Include="assets\img\responsive-illustrations.png" />
+    <Content Include="assets\js\application.js" />
+    <Content Include="assets\js\bootstrap-alert.js" />
+    <Content Include="assets\js\bootstrap-button.js" />
+    <Content Include="assets\js\bootstrap-carousel.js" />
+    <Content Include="assets\js\bootstrap-collapse.js" />
+    <Content Include="assets\js\bootstrap-dropdown.js" />
+    <Content Include="assets\js\bootstrap-modal.js" />
+    <Content Include="assets\js\bootstrap-popover.js" />
+    <Content Include="assets\js\bootstrap-scrollspy.js" />
+    <Content Include="assets\js\bootstrap-tab.js" />
+    <Content Include="assets\js\bootstrap-tooltip.js" />
+    <Content Include="assets\js\bootstrap-transition.js" />
+    <Content Include="assets\js\bootstrap-typeahead.js" />
+    <Content Include="assets\js\google-code-prettify\prettify.css" />
+    <Content Include="assets\js\google-code-prettify\prettify.js" />
+    <Content Include="assets\js\jquery.js" />
+    <Content Include="Default.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -60,7 +115,19 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="assets\bootstrap.zip" />
+    <None Include="assets\js\README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
