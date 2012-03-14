@@ -12,6 +12,10 @@
             padding-top: 60px;
             padding-bottom: 40px;
         }
+        .sidebar-nav
+        {
+            padding: 9px 0;
+        }
     </style>
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
     <%--  <link href="assets/css/docs.css" rel="stylesheet" type="text/css" />--%>
@@ -20,15 +24,15 @@
     <form id="form1" runat="server">
     <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
-            <div class="container">
+            <div class="container-fluid">
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span
                     class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
                 </a><a class="brand" href="#">Project Name</a>
                 <div class="nav-collapse">
                     <ul class="nav">
                         <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">About</a></li>
                     </ul>
                 </div>
             </div>
@@ -40,8 +44,8 @@
                 <div class="well sidebar-nav">
                     <ul class="nav nav-list">
                         <li class="nav-header">Sidebar</li>
-                        <li class="active"><a>index</a></li>
-                        <li><a>link</a></li>
+                        <li class="active"><a><i class="icon-home"></i>index</a></li>
+                        <li><a><i class="icon-adjust"></i>link</a></li>
                         <li><a>link</a></li>
                         <li><a>link</a></li>
                         <li><a>link</a></li>
@@ -57,10 +61,10 @@
                         a large callout called the hero unit and three supporting pieces of content. Use
                         it as a starting point to create something more unique.</p>
                     <p>
-                        <a class="btn btn-primary btn-large">Learn more &raquo;</a>
+                        <a class="btn btn-primary btn-large"><i class="icon-info-sign"></i>Learn more &raquo;</a>
                     </p>
                 </div>
-                <div class="row">
+                <div class="row-fluid">
                     <div class="span4">
                         <h2>
                             Heading</h2>
