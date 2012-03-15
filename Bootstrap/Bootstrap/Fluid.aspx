@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Fluid.aspx.cs" Inherits="Bootstrap.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Fluid.aspx.cs" Inherits="Bootstrap.Fluid" %>
 
 <!DOCTYPE html>
 <html lang="en">

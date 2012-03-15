@@ -105,7 +105,10 @@
     <Content Include="assets\js\google-code-prettify\prettify.css" />
     <Content Include="assets\js\google-code-prettify\prettify.js" />
     <Content Include="assets\js\jquery.js" />
+    <Content Include="Register.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="Fluid.aspx" />
+    <Content Include="PostData.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -115,12 +118,34 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutoCompleteAsyn.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fluid.aspx.cs">
+      <DependentUpon>Fluid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fluid.aspx.designer.cs">
+      <DependentUpon>Fluid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PostData.aspx.cs">
+      <DependentUpon>PostData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PostData.aspx.designer.cs">
+      <DependentUpon>PostData.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

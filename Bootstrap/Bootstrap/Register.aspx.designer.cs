@@ -10,7 +10,7 @@
 namespace Bootstrap {
     
     
-    public partial class Fluid {
+    public partial class Register {
         
         /// <summary>
         /// form1 control.

@@ -89,6 +89,33 @@
           © company 2012
         </footer>
     </div>
+    <script type="text/javascript">
+        function GetValue() {
+            var xmlHttp = GetHttpObject();
+            var newUrl = "PostData.aspx";
+            xmlHttp.open("GET", newUrl, true);
+            xmlHttp.onreadystatechange = function () {
+                if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+                    if (xmlHttp.responseText == "-1")
+                        alert("kd");
+                    else {
+                        //                        xmlHttp.
+                        //                        location.href = "ImportItem.aspx";
+                    }
+                }
+            };
+            xmlHttp.send(null);
+            return false;
+        }
+        function GetRandomValue() {
+            return Math.random() * Math.random() * 10000000;
+        }
+        function GetHttpObject() {
+            if (typeof XMLHttpRequest != 'undefined') return new XMLHttpRequest();
+            try { return new ActiveXObject("Msxml2.XMLHTTP"); }
+            catch (e) { try { return new ActiveXObject("Microsoft.XMLHTTP"); } catch (e) { } }
+        }
+    </script>
     </form>
     <script src="assets/js/jquery.js" type="text/javascript"></script>
     <script src="assets/js/bootstrap-collapse.js" type="text/javascript"></script>
