@@ -54,6 +54,11 @@
     <Content Include="assets\css\bootstrap-responsive.css" />
     <Content Include="assets\css\bootstrap.css" />
     <Content Include="assets\css\docs.css" />
+    <Content Include="assets\fullcalendar\fullcalendar.css" />
+    <Content Include="assets\fullcalendar\fullcalendar.js" />
+    <Content Include="assets\fullcalendar\fullcalendar.min.js" />
+    <Content Include="assets\fullcalendar\fullcalendar.print.css" />
+    <Content Include="assets\fullcalendar\gcal.js" />
     <Content Include="assets\ico\apple-touch-icon-114-precomposed.png" />
     <Content Include="assets\ico\apple-touch-icon-57-precomposed.png" />
     <Content Include="assets\ico\apple-touch-icon-72-precomposed.png" />
@@ -105,6 +110,7 @@
     <Content Include="assets\js\google-code-prettify\prettify.css" />
     <Content Include="assets\js\google-code-prettify\prettify.js" />
     <Content Include="assets\js\jquery.js" />
+    <Content Include="Calendar.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Fluid.aspx" />
@@ -119,6 +125,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AutoCompleteAsyn.cs" />
+    <Compile Include="Calendar.aspx.cs">
+      <DependentUpon>Calendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Calendar.aspx.designer.cs">
+      <DependentUpon>Calendar.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
