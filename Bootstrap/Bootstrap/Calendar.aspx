@@ -20,13 +20,16 @@
             $("#calendar").fullCalendar({
                 events: 'https://www.google.com/calendar/feeds/huangfeng050%40gmail.com/public/basic',
                 currentTimezone: 'Asia/Hong_Kong',
-                defaultView: 'day',
                 header: {
                     left: 'today',
                     center: 'prev,title,next  agendaDay,agendaWeek,month',
                     right: ''
-                }
-
+                },
+                firstDay: '1',
+                //                isRTL: true
+                weekends: false,
+                weekMode: 'fixed',
+                height: 300
 
             });
         });
