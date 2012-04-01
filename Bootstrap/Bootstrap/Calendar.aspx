@@ -18,8 +18,22 @@
         $(document).ready(function () {
             //fullCalendar,注意大小写
             $("#calendar").fullCalendar({
-                events: 'https://www.google.com/calendar/feeds/huangfeng050%40gmail.com/public/basic',
-                currentTimezone: 'Asia/Hong_Kong',
+                eventSources: ['https://www.google.com/calendar/feeds/huangfeng050%40gmail.com/public/basic'],
+                events: [
+                    {
+                        title: 'My Event',
+                        start: '2012-04-01',
+                        url: 'http://google.com'
+                    },
+                    {
+                        title: 'tt',
+                        start: '2012-04-02',
+                        end: '2012-04-10',
+                        url: '',
+                        allDay: true
+                    }
+                ],
+                currentTimezone: 'Asia/shanghai',
                 header: {
                     left: 'today',
                     center: 'prev,title,next  agendaDay,agendaWeek,month',
@@ -27,12 +41,46 @@
                 },
                 firstDay: '1',
                 //                isRTL: true
-                weekends: false,
+                weekends: true,
                 weekMode: 'fixed',
-                height: 300
+                //                height: 300,
+                //                defaultView: 'agendaDay',
+                allDaySlot: true,
+                allDayText: '全天', //default:'all-day
+                axisFormat: 'HH:mm tt',
+                //                slotMinutes: 21, //每个间隔相差的时间
+                dayClick: function (date, allDay, jsEvent, view) {
+                    if (allDay) {
+                        alert('Clicked on the entire day:' + date);
+                    } else {
+                        alert('Clicked on the slot:' + date);
+                    }
 
+                    alert('Coordidates:' + jsEvent.pageX + ',' + jsEvent.pageY);
+
+                    alert('Current view:' + view.name);
+
+                    //                    $(this).css('background-color', 'red');
+
+                },
+                //                eventMouseover: function (event, jsEvent, view) {
+                //                    alert('eventMouseover');
+                //                },
+                //                eventMouseout: function (event, jsEvent, view) {
+                //                    alert('eventMouseout');
+                //                },
+                selectable: true,
+                selectHelper: true,
+                select: function (startDate, endDate, allDay, jsEvent, view) {
+                    alert(startDate + ',' + endDate);
+                }
             });
+            //change view
+            //            $("#calendar").fullCalendar("changeView", "agendaDay");
         });
+
+        //下面无效，何解?
+        $('#calendar').fullCalendar('select', 'april 08 2012', 'april 10 2012', false);
     </script>
 </body>
 </html>
