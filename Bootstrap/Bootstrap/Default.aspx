@@ -27,7 +27,7 @@
                 <div class="nav-collapse">
                     <ul class="nav">
                         <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#">link</a></li>
+                        <li><a href="Register.aspx">Register</a></li>
                         <li><a href="#">link</a></li>
                     </ul>
                 </div>
