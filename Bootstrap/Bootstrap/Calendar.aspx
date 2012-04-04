@@ -21,17 +21,29 @@
                 events: 'https://www.google.com/calendar/feeds/huangfeng050%40gmail.com/public/basic',
                 currentTimezone: 'Asia/Hong_Kong',
                 header: {
-                    left: 'today',
-                    center: 'prev,title,next  agendaDay,agendaWeek,month',
+                    left: 'prev next today',
+                    center: 'title  agendaDay,agendaWeek,month,basicWeek',
                     right: ''
                 },
-                firstDay: '1',
+                firstDay: '0', //0 is sunday
                 //                isRTL: true
-                weekends: false,
+                weekends: true,
                 weekMode: 'fixed',
-                height: 300
+                height: 400,
+                //对day,week有效
+                //                contentHeight: 130,
+                aspectRatio: 100,
+                //每次改变日期时调用，如：Month-->Week
+                //                viewDisplay: function (view) {
+                //                    alert("the new title of the view is " + view.title);
+                //                }
+                //Calendar resize
+                windowResize: function (view) {
+                    alert("The calendar has adjusted to a window resize.");
+                }
 
             });
+            //            $("#calendar").fullCalendar('destroy');
         });
     </script>
 </body>
