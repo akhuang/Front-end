@@ -8,16 +8,27 @@
     <link href="assets/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" />
     <script src="assets/fullcalendar/fullcalendar.min.js" type="text/javascript"></script>
     <script src="assets/fullcalendar/gcal.js" type="text/javascript"></script>
+    <script src="assets/jquery-ui-1.8.18.custom/js/jquery-ui-1.8.18.custom.min.js" type="text/javascript"></script>
+    <link href="assets/jquery-ui-1.8.18.custom/css/flick/jquery-ui-1.8.18.custom.css"
+        rel="stylesheet" type="text/css" />
+
 </head>
 <body>
     <form id="form1" runat="server">
     <div id="calendar">
+    </div>
+    <div style="display: none">
+        <div id="dialog">
+            <p>
+                Dialog content goes here.</p>
+        </div>
     </div>
     </form>
     <script type="text/javascript">
         $(document).ready(function () {
             //fullCalendar,注意大小写
             $("#calendar").fullCalendar({
+                theme: true,
                 eventSources: ['https://www.google.com/calendar/feeds/huangfeng050%40gmail.com/public/basic'],
                 events: [
                     {
@@ -54,7 +65,7 @@
                 //Calendar resize
                 windowResize: function (view) {
                     alert("The calendar has adjusted to a window resize.");
-                }
+                },
                 //                height: 300,
                 //                defaultView: 'agendaDay',
                 allDaySlot: true,
@@ -62,15 +73,17 @@
                 axisFormat: 'HH:mm tt',
                 //                slotMinutes: 21, //每个间隔相差的时间
                 dayClick: function (date, allDay, jsEvent, view) {
-                    if (allDay) {
-                        alert('Clicked on the entire day:' + date);
-                    } else {
-                        alert('Clicked on the slot:' + date);
-                    }
+                    //                    if (allDay) {
+                    //                        alert('Clicked on the entire day:' + date);
+                    //                    } else {
+                    //                        alert('Clicked on the slot:' + date);
+                    //                    }
 
-                    alert('Coordidates:' + jsEvent.pageX + ',' + jsEvent.pageY);
+                    //                    alert('Coordidates:' + jsEvent.pageX + ',' + jsEvent.pageY);
 
-                    alert('Current view:' + view.name);
+                    //                    alert('Current view:' + view.name);
+
+                    $("#dialog").dialog();
 
                     //                    $(this).css('background-color', 'red');
 
@@ -85,15 +98,19 @@
                 selectHelper: true,
                 select: function (startDate, endDate, allDay, jsEvent, view) {
                     alert(startDate + ',' + endDate);
+                },
+                loading: function (isloading, view) {
+
                 }
             });
             //            $("#calendar").fullCalendar('destroy');
             //change view
             //            $("#calendar").fullCalendar("changeView", "agendaDay");
+            firstHour: 3
         });
 
         //下面无效，何解?
-        $('#calendar').fullCalendar('select', 'april 08 2012', 'april 10 2012', false);
+        $('#calendar').fullCalendar('select', '2012-4-11', '2012-4-20', false);
     </script>
 </body>
 </html>

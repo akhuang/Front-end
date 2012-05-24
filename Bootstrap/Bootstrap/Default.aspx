@@ -15,6 +15,7 @@
     </style>
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
     <%--  <link href="assets/css/docs.css" rel="stylesheet" type="text/css" />--%>
+    <script src="assets/js/bootstrap-modal.js" type="text/javascript"></script>
 </head>
 <body>
     <form id="form1" runat="server">
