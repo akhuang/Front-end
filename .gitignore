@@ -1,3 +1,5 @@
 
-/Bootstrap/Bootstrap/bin
-/Bootstrap/Bootstrap/obj
+bin
+obj
+*.suo
+*.user
