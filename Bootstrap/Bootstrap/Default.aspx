@@ -13,6 +13,8 @@
             padding-bottom: 40px;
         }
     </style>
+        <script src="assets/js/jquery.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap-collapse.js" type="text/javascript"></script>
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
     <%--  <link href="assets/css/docs.css" rel="stylesheet" type="text/css" />--%>
     <script src="assets/js/bootstrap-modal.js" type="text/javascript"></script>
@@ -118,7 +120,6 @@
         }
     </script>
     </form>
-    <script src="assets/js/jquery.js" type="text/javascript"></script>
-    <script src="assets/js/bootstrap-collapse.js" type="text/javascript"></script>
+
 </body>
 </html>

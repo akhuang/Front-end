@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\bootstrap-fileupload.js" />
     <Content Include="assets\css\bootstrap-responsive.css" />
     <Content Include="assets\css\bootstrap.css" />
     <Content Include="assets\css\docs.css" />
@@ -100,6 +101,15 @@
     <Content Include="assets\img\less-logo-large.png" />
     <Content Include="assets\img\less-small.png" />
     <Content Include="assets\img\responsive-illustrations.png" />
+    <Content Include="assets\jasny-bootstrap\css\jasny-bootstrap-responsive.css" />
+    <Content Include="assets\jasny-bootstrap\css\jasny-bootstrap-responsive.min.css" />
+    <Content Include="assets\jasny-bootstrap\css\jasny-bootstrap.css" />
+    <Content Include="assets\jasny-bootstrap\css\jasny-bootstrap.min.css" />
+    <Content Include="assets\jasny-bootstrap\js\bootstrap-fileupload.js" />
+    <Content Include="assets\jasny-bootstrap\js\bootstrap-inputmask.js" />
+    <Content Include="assets\jasny-bootstrap\js\bootstrap-rowlink.js" />
+    <Content Include="assets\jasny-bootstrap\js\jasny-bootstrap.js" />
+    <Content Include="assets\jasny-bootstrap\js\jasny-bootstrap.min.js" />
     <Content Include="assets\jquery-ui-1.8.18.custom\css\flick\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="assets\jquery-ui-1.8.18.custom\css\flick\images\ui-bg_flat_0_eeeeee_40x100.png" />
     <Content Include="assets\jquery-ui-1.8.18.custom\css\flick\images\ui-bg_flat_55_ffffff_40x100.png" />
@@ -133,6 +143,7 @@
     <Content Include="assets\js\google-code-prettify\prettify.js" />
     <Content Include="assets\js\jquery.js" />
     <Content Include="Calendar.aspx" />
+    <Content Include="FileUpload.htm" />
     <Content Include="Register.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Fluid.aspx" />
@@ -206,6 +217,16 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="assets\bootstrap.zip" />
+    <None Include="assets\jasny-bootstrap\fonts\iconic_fill.eot" />
+    <None Include="assets\jasny-bootstrap\fonts\iconic_fill.otf" />
+    <None Include="assets\jasny-bootstrap\fonts\iconic_fill.svg" />
+    <None Include="assets\jasny-bootstrap\fonts\iconic_fill.ttf" />
+    <None Include="assets\jasny-bootstrap\fonts\iconic_fill.woff" />
+    <None Include="assets\jasny-bootstrap\fonts\iconic_stroke.eot" />
+    <None Include="assets\jasny-bootstrap\fonts\iconic_stroke.otf" />
+    <None Include="assets\jasny-bootstrap\fonts\iconic_stroke.svg" />
+    <None Include="assets\jasny-bootstrap\fonts\iconic_stroke.ttf" />
+    <None Include="assets\jasny-bootstrap\fonts\iconic_stroke.woff" />
     <None Include="assets\js\README.md" />
     <Content Include="Handler1.ashx" />
   </ItemGroup>
