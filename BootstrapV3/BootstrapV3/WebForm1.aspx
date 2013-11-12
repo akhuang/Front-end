@@ -11,91 +11,106 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div id="stack1" class="modal fade" tabindex="-1" data-focus-on="input:first" style="display: none;">
-        <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                ×</button>
-            <h4 class="modal-title">
-                Stack One</h4>
+        <div id="stack1" class="modal fade" tabindex="-1" data-focus-on="input:first" style="display: none;">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    ×</button>
+                <h4 class="modal-title">Stack One</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    One fine body…
+                </p>
+                <p>
+                    One fine body…
+                </p>
+                <p>
+                    One fine body…
+                </p>
+                <input class="form-control" type="text" data-tabindex="1">
+                <input class="form-control" type="text" data-tabindex="2">
+                <button class="btn btn-default" data-toggle="modal" href="#stack2">
+                    Launch modal</button>
+            </div>
+            <div class="modal-footer">
+                <button type="button" data-dismiss="modal" class="btn btn-default">
+                    Close</button>
+                <button type="button" class="btn btn-primary">
+                    Ok</button>
+            </div>
         </div>
-        <div class="modal-body">
-            <p>
-                One fine body…</p>
-            <p>
-                One fine body…</p>
-            <p>
-                One fine body…</p>
-            <input class="form-control" type="text" data-tabindex="1">
-            <input class="form-control" type="text" data-tabindex="2">
-            <button class="btn btn-default" data-toggle="modal" href="#stack2">
-                Launch modal</button>
-        </div>
-        <div class="modal-footer">
-            <button type="button" data-dismiss="modal" class="btn btn-default">
-                Close</button>
-            <button type="button" class="btn btn-primary">
-                Ok</button>
-        </div>
-    </div>
-    <!-- Button trigger modal -->
-    <button class="btn btn-primary btn-lg" data-toggle="modal" id="btnLauch" data-target="#myModal">
-        Launch demo modal
-    </button>
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                        &times;</button>
-                    <h4 class="modal-title" id="myModalLabel">
-                        Modal title</h4>
-                </div>
-                <div class="modal-body">
-                    ...
+        <!-- Button trigger modal -->
+        <button class="btn btn-primary btn-lg" data-toggle="modal" id="btnLauch" data-target="#myModal">
+            Launch demo modal
+        </button>
+        <button class="btn btn-primary btn-lg" id="btnLauch2" href="t1.aspx" data-target="#myModal">
+            Launch demo modal
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;</button>
+                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        ...
                     <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1">
                         Launch demo modal 1
                     </button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            Close</button>
+                        <button type="button" class="btn btn-primary">
+                            Save changes</button>
+                    </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">
-                        Close</button>
-                    <button type="button" class="btn btn-primary">
-                        Save changes</button>
-                </div>
+                <!-- /.modal-content -->
             </div>
-            <!-- /.modal-content -->
+            <!-- /.modal-dialog -->
         </div>
-        <!-- /.modal-dialog -->
-    </div>
-    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                        &times;</button>
-                    <h4 class="modal-title" id="H1">
-                        Modal title</h4>
+        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;</button>
+                        <h4 class="modal-title" id="H1">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            Close</button>
+                        <button type="button" class="btn btn-primary">
+                            Save changes</button>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">
-                        Close</button>
-                    <button type="button" class="btn btn-primary">
-                        Save changes</button>
-                </div>
+                <!-- /.modal-content -->
             </div>
-            <!-- /.modal-content -->
+            <!-- /.modal-dialog -->
         </div>
-        <!-- /.modal-dialog -->
-    </div>
+
+        <button class="btn btn-primary btn-lg" id="Button1" href="t1.aspx" data-toggle="modal" data-target="#divTest">
+            Launch test
+        </button>
+        <div class="modal fade" id="divTest" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>
     </form>
     <script type="text/javascript">
         $(function () {
+            //$('#myModal').modal();
+
+            //$("#btnLauch2").click(function (e) {
+            //    e.preventDefault();
+            //    $('#myModal').modal("show", function () { alert("k"); });
+            //});
+
             $('#myModal').on('show.bs.modal', function () {
                 // do something…
                 console.log("init");
@@ -111,7 +126,7 @@
                 console.log("hide");
             });
         });
-      
+
     </script>
 </body>
 </html>

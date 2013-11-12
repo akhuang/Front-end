@@ -10,7 +10,7 @@
 namespace BootstrapV3 {
     
     
-    public partial class WebForm1 {
+    public partial class t1 {
         
         /// <summary>
         /// form1 控件。
