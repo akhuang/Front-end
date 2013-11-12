@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\bootstrap-fileupload.js" />
     <Content Include="assets\css\bootstrap-responsive.css" />
     <Content Include="assets\css\bootstrap.css" />
     <Content Include="assets\css\docs.css" />
@@ -100,6 +101,15 @@
     <Content Include="assets\img\less-logo-large.png" />
     <Content Include="assets\img\less-small.png" />
     <Content Include="assets\img\responsive-illustrations.png" />
+    <Content Include="assets\jasny-bootstrap\css\jasny-bootstrap-responsive.css" />
+    <Content Include="assets\jasny-bootstrap\css\jasny-bootstrap-responsive.min.css" />
+    <Content Include="assets\jasny-bootstrap\css\jasny-bootstrap.css" />
+    <Content Include="assets\jasny-bootstrap\css\jasny-bootstrap.min.css" />
+    <Content Include="assets\jasny-bootstrap\js\bootstrap-fileupload.js" />
+    <Content Include="assets\jasny-bootstrap\js\bootstrap-inputmask.js" />
+    <Content Include="assets\jasny-bootstrap\js\bootstrap-rowlink.js" />
+    <Content Include="assets\jasny-bootstrap\js\jasny-bootstrap.js" />
+    <Content Include="assets\jasny-bootstrap\js\jasny-bootstrap.min.js" />
     <Content Include="assets\jquery-ui-1.8.18.custom\css\flick\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="assets\jquery-ui-1.8.18.custom\css\flick\images\ui-bg_flat_0_eeeeee_40x100.png" />
     <Content Include="assets\jquery-ui-1.8.18.custom\css\flick\images\ui-bg_flat_55_ffffff_40x100.png" />
@@ -134,11 +144,13 @@
     <Content Include="assets\js\jquery.js" />
     <Content Include="test.htm" />
     <Content Include="Calendar.aspx" />
-    <Content Include="tabs.htm" />
+    <Content Include="FileUpload.htm" />
     <Content Include="Register.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Fluid.aspx" />
     <Content Include="PostData.aspx" />
+    <Content Include="TabDemo.aspx" />
+    <Content Include="Typeahead.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -155,6 +167,9 @@
     </Compile>
     <Compile Include="Calendar.aspx.designer.cs">
       <DependentUpon>Calendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler1.ashx.cs">
+      <DependentUpon>Handler1.ashx</DependentUpon>
     </Compile>
     <Compile Include="Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
@@ -185,11 +200,36 @@
       <DependentUpon>PostData.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TabDemo.aspx.cs">
+      <DependentUpon>TabDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TabDemo.aspx.designer.cs">
+      <DependentUpon>TabDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Typeahead.aspx.cs">
+      <DependentUpon>Typeahead.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Typeahead.aspx.designer.cs">
+      <DependentUpon>Typeahead.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
     <Content Include="assets\bootstrap.zip" />
+    <None Include="assets\jasny-bootstrap\fonts\iconic_fill.eot" />
+    <None Include="assets\jasny-bootstrap\fonts\iconic_fill.otf" />
+    <None Include="assets\jasny-bootstrap\fonts\iconic_fill.svg" />
+    <None Include="assets\jasny-bootstrap\fonts\iconic_fill.ttf" />
+    <None Include="assets\jasny-bootstrap\fonts\iconic_fill.woff" />
+    <None Include="assets\jasny-bootstrap\fonts\iconic_stroke.eot" />
+    <None Include="assets\jasny-bootstrap\fonts\iconic_stroke.otf" />
+    <None Include="assets\jasny-bootstrap\fonts\iconic_stroke.svg" />
+    <None Include="assets\jasny-bootstrap\fonts\iconic_stroke.ttf" />
+    <None Include="assets\jasny-bootstrap\fonts\iconic_stroke.woff" />
     <None Include="assets\js\README.md" />
+    <Content Include="Handler1.ashx" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
