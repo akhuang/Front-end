@@ -132,6 +132,7 @@
     <Content Include="assets\js\google-code-prettify\prettify.css" />
     <Content Include="assets\js\google-code-prettify\prettify.js" />
     <Content Include="assets\js\jquery.js" />
+    <Content Include="test.htm" />
     <Content Include="Calendar.aspx" />
     <Content Include="tabs.htm" />
     <Content Include="Register.aspx" />
