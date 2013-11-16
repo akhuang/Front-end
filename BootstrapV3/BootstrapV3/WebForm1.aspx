@@ -101,6 +101,8 @@
             Launch test
         </button>
         <div class="modal fade" id="divTest" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>
+
+        <input type="text" id="txtTmp" />
     </form>
     <script type="text/javascript">
         $(function () {
@@ -123,6 +125,12 @@
 
             $('#myModal').on('hide.bs.modal', function () {
                 // do something…
+                console.log("hide");
+            });
+
+            $('#divTest').on('hide.bs.modal', function (data) {
+                // do something…
+                console.log(data);
                 console.log("hide");
             });
         });

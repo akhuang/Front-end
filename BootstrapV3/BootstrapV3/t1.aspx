@@ -19,6 +19,8 @@
                 </div>
                 <div class="modal-body">
                     t1.aspx
+
+                    <button class="btn" id="btnTest">Close</button>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">
@@ -29,6 +31,20 @@
             </div>
             <!-- /.modal-content -->
         </div>
+
+        <script type="text/javascript">
+
+            $(function () {
+                $("#btnTest").click(function (e) {
+                    e.preventDefault();
+                    var data = { name: 'phoenix' }
+
+                    $("#txtTmp").val("KJKJKJ");
+                    $("#divTest").modal("hide");
+                });
+
+            });
+        </script>
     </form>
 </body>
 </html>
