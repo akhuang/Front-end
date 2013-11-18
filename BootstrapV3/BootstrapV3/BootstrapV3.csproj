@@ -141,6 +141,7 @@
     <Content Include="Scripts\jquery-ui-1.10.3.js" />
     <Content Include="Scripts\jquery-ui-1.10.3.min.js" />
     <Content Include="t2.aspx" />
+    <Content Include="t3.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -179,6 +180,13 @@
     </Compile>
     <Compile Include="t1.aspx.designer.cs">
       <DependentUpon>t1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="t3.aspx.cs">
+      <DependentUpon>t3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="t3.aspx.designer.cs">
+      <DependentUpon>t3.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>

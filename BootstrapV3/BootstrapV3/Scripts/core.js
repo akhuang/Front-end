@@ -30,6 +30,20 @@
         window.top.ShowDialog($options);
     };
 
+    //session format : { "paras": data, iscallback: true }
+    $.SetDialogSession = function (session, isInFrame) {
+        isInFrame = isInFrame || true;
+        $._DialogSessionCallBack(session)
+    };
+
+    $.CloseDialog = function (data, isinternal) {
+        if (data != null) {
+            $.SetDialogSession({ "paras": data, iscallback: true }, isinternal);
+        }
+        var $isinternal = isinternal || true;
+        window.top.CloseDialog();
+    };
+
     $._DialogSessionCallBack = function (session, isinitfg) {
         var $session = {};
         if (isinitfg == null || isinitfg == false) {
