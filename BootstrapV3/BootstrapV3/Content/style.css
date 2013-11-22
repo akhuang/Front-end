@@ -1,0 +1,310 @@
+﻿body
+{
+	font-size: 13px;
+	color: #626262;
+	font-family: SimSun Verdana;
+}
+
+.form-control
+{
+	height: 30px;
+	padding: 3px 6px;
+}
+
+.detail-container .multicol .form-group .btn
+{
+	width: 70px;
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(odd) > th
+{
+	background-color: white;
+}
+
+.table-striped > tbody > tr:nth-child(even) > td, .table-striped > tbody > tr:nth-child(even) > th
+{
+	background-color: #f9f9f9;
+}
+
+.table-hover > tbody > tr:hover > td, .table-hover > tbody > tr:hover > th
+{
+	background-color: #F5DEB3 /*#f5f5f5*/;
+}
+
+/**/
+
+/*公用*/
+.caution
+{
+	color: red;
+	font-weight: 700;
+}
+
+.alert-error
+{
+	color: red;
+}
+
+.datePicker
+{
+	background: url(images/datePicker.gif) no-repeat right center;
+}
+
+.form-control[readonly]
+{
+	cursor: pointer;
+}
+
+.searchBtn
+{
+	background-image: url(images/Search.gif);
+	border: 0px;
+	width: 25px;
+	height: 21px;
+	cursor: pointer;
+}
+
+#oper
+{
+	margin-top: 4px;
+}
+
+#pageDiv
+{
+	float: left;
+	width: 60%;
+	padding: 13px;
+}
+
+#pageDiv input.btnGo
+{
+	width: 40px;
+	height: 18px;
+	font-size: xx-small;
+}
+
+.pagination .tdLeft
+{
+	vertical-align: middle;
+}
+
+
+#top_container
+{
+	height: 83px;
+}
+
+#top_container .navbar-header
+{
+	background-image: url(images/logo_fxg_menu.png);
+	background-repeat: no-repeat;
+	height: 75px;
+	width: 252px;
+	float: left;
+}
+
+#top_container .nav-link
+{
+	float: left;
+	width: 670px;
+	padding-top: 31px;
+	font-size: 14px;
+}
+
+#top_container .nav-link .nav-tabs
+{
+	margin-left: -30px;
+	margin-left: -30px;
+	margin-top: 13px;
+	border: none;
+}
+
+#top_container .nav-link .nav-tabs > li
+{
+	float: left;
+	margin-bottom: -1px;
+	position: relative;
+	display: block;
+}
+
+#top_container .nav-link .nav-tabs > li
+{
+	float: left;
+	margin-bottom: -1px;
+	padding: 1px;
+}
+
+#top_container .nav-link .nav-tabs > li > a
+{
+	margin-right: 2px;
+	line-height: 1.428571429; /*border: 1px solid transparent;*/
+	border-radius: 4px 4px 0 0;
+	position: relative;
+	display: block;
+	padding: 5px 24px;
+	text-decoration: none;
+	border: none;
+}
+
+#top_container .nav-link .nav-tabs > li > a:hover
+{
+	border-color: #eeeeee #eeeeee #dddddd;
+}
+
+#top_container .nav-link .nav-tabs > li > a, .nav-tabs > li > a:hover, .nav-tabs > li > a:focus
+{
+	color: #555555;
+	cursor: pointer; /*background-color: #ffffff;*/ /*background-color: #f6d06a;*/ /*border: 1px solid #dddddd;*/
+	border-bottom-color: transparent;
+	background-image: url(images/menu001.png);
+}
+
+#top_container .login-info
+{
+	float: right;
+	padding: 10px 20px;
+}
+
+#top_container .login-info td
+{
+	text-align: right;
+}
+
+.nav-split
+{
+	background-image: url(images/cn_nav.gif);
+	background-repeat: repeat-x;
+	width: 100%;
+	height: 8px;
+}
+
+.nav-split .nav-img
+{
+	width: 58px;
+	margin: 0 auto;
+}
+
+.nav-split .nav-img img
+{ 
+	margin-bottom: 12px;
+}
+
+.list-container
+{
+	padding: 15px 10px 0px 10px;
+}
+
+#result
+{
+	padding-top: 5px;
+}
+
+#result table
+{
+}
+
+#result table th
+{
+	background: #e6f2ff;
+}
+
+#result table td
+{
+}
+
+/*detail*/
+.detail-container
+{
+	padding: 5px;
+}
+
+.detail-container table
+{
+	width: 100%;
+}
+
+.detail-container td
+{
+	padding: 4px;
+}
+
+.detail-container td div
+{
+	/*padding: 3px;*/
+}
+
+.detail-container td input, select
+{
+	width: 300px;
+}
+
+.detail-container td input.searchBtn
+{
+	width: 25px;
+}
+
+.detail-container td div.tdValue
+{
+	margin-left: 20px;
+}
+
+.detail-container tr.item
+{
+	padding: 10px;
+	height: 30px;
+	background-color: #f7e166;
+}
+
+.detail-container tr.item td.tdColLeft
+{
+	text-align: center;
+	width: 20%;
+}
+
+.detail-container td.tdColRight
+{
+	text-align: left;
+	width: 80%;
+}
+
+.detail-container td.tdColRight .form-group
+{
+	/*display: block;*/
+}
+
+.detail-container td.tdColRight .form-control
+{
+	/*float: left;*/
+}
+
+.detail-container .multicol input, select
+{
+	width: 150px;
+}
+
+.detail-container .multicol select.form-control
+{
+	width: 150px;
+}
+
+.detail-container .multicol .form-inline
+{
+	padding: 4px;
+}
+
+.detail-container .fontBold
+{
+	font-weight: bold;
+}
+
+.detail-container .SpecDesc li
+{
+	list-style-type: upper-roman;
+}
+
+.bs-callout
+{
+	margin: 20px 0;
+	padding: 20px;
+	border-left: 3px solid #eee;
+}
